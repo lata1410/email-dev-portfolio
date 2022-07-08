@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    @keyframes suspense {
+      0% {
+        content: ".";
+        color: white;
+      }
+      50% {
+        content: "..";
+      }
+      100% {
+        content: "...";
+        color: black;
+      }
+    }
+    @keyframes suspense2 {
+      0% {
+        color: white;
+      }
+      50% {
+        color: #888;
+      }
+      100% {
+        color: #777676;
+      }
+    }
+
+    h1{
+      animation: suspense2 4s linear infinite alternate;
+
+    }
+    #suspense {
+      animation: suspense 2s linear infinite alternate;
+    }
+    </style>
+  </head>
+  <body style="background-color: #e6e6e6;">
+    <div class="wrapper">
+      <h1 style="color: #b0b0b0; font-family: Verdana, sans-serif; font-size: 11px;">Choose an email<span id="suspense">...</span></h1>
+    </div>
+  </body>
+</html>

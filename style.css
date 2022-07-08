@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  font-family: "Gentium Book Plus", serif;
+}
+
+*::-moz-selection { /* Code for Firefox */
+ /* color: red; */
+ background: #a63131;
+}
+
+*::selection {
+ /* color: red; */
+ background: #a63131;
+}
+
+body {
+  background-color: #1057ff;
+  padding: 0 2%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+}
+
+h1 {
+  color: #00a429;
+  text-shadow: 1.5px 1.5px #a6313199;
+}
+
+h1 > sup {
+  font-size: 18px;
+  text-shadow: 2px 2px #0000004f;
+}
+
+p {
+  color: #000000;
+  text-align: left;
+  line-height: 1.25;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+ul li:before {
+  content: "\2192";
+  margin: 0 1em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #00a429;
+}
+
+.txt {
+  max-width: 400px;
+  margin-left: 5%;
+}
+
+.txt > p:first-child {
+  margin-top: 0;
+}
+
+.txt  * {
+  font-size: 18px;
+  text-align: justify;
+
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.mail-navigator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.radio-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 4px;
+}
+
+.radio-button-wrapper > label {
+  font-weight: bold;
+  color: #c973ff;
+  text-shadow: 0px 0px 4px #000000a3;
+}
+
+#loading-mail {
+  display: none;
+}
+
+#mail-shower{
+  max-width: 800px;
+  text-align: center;
+}
+
+iframe {
+  margin-top: 20px;
+  margin-left: 2%;
+  width: 90%;
+  min-height: 600px;
+}
+
+li{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+footer{
+  text-align: right;
+  color: #ffffd1;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  h1{
+    font-size: 22px;
+  }
+
+  .mail-navigator {
+    margin-left: 2%;
+  }
+  .txt {
+    margin-left: 2%;
+    max-width: 100%;
+  }
+
+  .txt  * {
+    font-size: 18px;
+  }
+
+  iframe {
+    margin-top: 20px;
+    margin-left: 5%;
+    width: 90%;
+  }
+}
