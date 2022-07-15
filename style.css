@@ -85,7 +85,6 @@ a:hover {
 .mail-navigator {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .radio-button-wrapper {
